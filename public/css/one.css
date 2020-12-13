@@ -1,0 +1,232 @@
+body{
+    background-color: #f9dcd6;
+    font-family: Lato;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.42857143;
+    height: 100%;
+    margin: 0;
+}
+* {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    outline:none;
+}
+
+.txt{
+    color: white;
+    font-size: 18px;
+    line-height: 70px;
+    outline: none;
+}
+.underline {
+    font-family: 'Great Vibes',cursive;
+    color: #283a44;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 15px;
+    position: relative;
+    text-align: center;
+}
+.underline:after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 280px;
+    background: #ef6a8a;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.and{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-top: 100px;
+    font-size: 70px;
+    margin-left: -22px;
+    color: #ef6a8a;
+    z-index: 2;
+    font-family: 'Lato',sans-serif;
+}
+.dslc-module-front {
+    position: relative;
+}
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    margin: 0;
+    position: relative;
+}
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #e74851;
+    left: 50%;
+    margin-left: -1.5px;
+}
+.timeline > li {
+    margin-bottom: 8px;
+    position: relative;
+}
+.timeline > li:before, .timeline > li:after {
+    content: " ";
+    display: table;
+}
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -35px;
+    background-color: #ef6a8a;
+    z-index: 2;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -ms-transition: 0.4s;
+    transition: 0.4s;
+    border: 2px solid #ef6a8a;
+    cursor: pointer;
+}
+div {
+    display: block;
+}
+#dslc-module-4 i {
+    font-style: normal;
+}
+.timeline > li > .timeline-badge i {
+    line-height: 75px;
+    font-size: 28px;
+}
+
+.timeline > li > .timeline-panel {
+    width: 45%;
+    float: left;
+    border: 1px solid #e74851;
+    border-radius: 2px;
+    padding: 12px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+    box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+}
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 36px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #e74851;
+    border-right: 0 solid #e74851;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+p {
+    color: #687177;
+}
+.negative100 {
+    margin-top: -100px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+.negative75 {
+    margin-top: -75px;
+}
+.txtcolor{
+    color: rgb(239, 106, 138);
+    font-size: 16px;
+}
+.timeline-foot{
+    color: #687177;
+    float: right;
+}
+
+.heartAnimation {
+    display:inline-block;
+    -webkit-animation-name:heartBlast;
+    animation-name:heartBlast;
+    -webkit-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-iteration-count:1;
+    animation-iteration-count:1;
+    -webkit-animation-timing-function:steps(28);
+    animation-timing-function:steps(28);
+    background-position:right;
+}
+
+.heartCa{
+    width: 130px;
+    height: 300px;
+    overflow:hidden;
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    z-index: 50;
+}
+.heart {
+    background:url(images/web_heart_animation.png);
+    background-position:left;
+    background-repeat:no-repeat;
+    height:85px;
+    width:85px;
+    cursor:pointer;
+    overflow:hidden; position: fixed;
+    right: 0;
+    top: 80%;
+    background-size:2900%;
+    z-index: 100;
+}
+.heart:hover, .heart:focus{
+    background-position:right;
+}
+
+@-webkit-keyframes heartBlast {
+    0% {
+        background-position:left;
+    }
+    100% {
+        background-position:right;
+    }
+}
+
+@keyframes heartBlast {
+    0% {
+        background-position:left;
+    }
+    100% {
+        background-position:right;
+    }
+}
+.tC{
+    color: #f04c74;
+}
+.clickH{
+    background-position:right;
+}
