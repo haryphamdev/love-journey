@@ -2,7 +2,7 @@
 
 ### A HTML/CSS Template, showing your love story
 
-=> Test this project online: https://haryphamdev.github.io/love-journey-template-haryphamdev/
+=> Test this project online: https://haryphamdev.github.io/love-journey/
 
 ### How to run this project ?
 Open the index.html with your browser
