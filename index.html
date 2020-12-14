@@ -20,6 +20,9 @@
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
             })();
+
+
+            
         </script>
     </head>
     <body class="body">
@@ -39,7 +42,7 @@
                 <h2 class="col-xs-12" style="font-family: 'Srisakdi', cursive;
                     color: #283a44; padding-bottom: 0px; font-weight: bold;">Our happiness is simply being together</h2>
             </div>
-            <span class="wow fadeInUp animated col-xs-12 text-center" data-wow-delay="0.7s" style="color: rgb(239, 106, 138);
+            <span style="cursor: pointer;" id="playAudio" title="Click me to play a love song" class="wow fadeInUp animated col-xs-12 text-center" data-wow-delay="0.7s" style="color: rgb(239, 106, 138);
                 visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;margin: 15px auto;font-size: 16px">
             <i class="fas fa-heart"></i> 12-12-2020 <i class="fas fa-heart"></i></span>
             <div class="col-xs-12">
@@ -471,12 +474,12 @@
         </div>
        
         <div id="player">
-            <audio controls autoplay hidden>
+            <audio id="audio" autoplay hidden >
              <source src="./audio/911.mp3" type="audio/mpeg">
                         unsupported !! 
             </audio>
         </div>
-        
+
 
         <script src="public/js/anijs-min.js"></script>
         <script src="public/js/anijs-helper-scrollreveal-min.js"></script>
@@ -498,13 +501,14 @@
                         $(".heart").removeClass('heartAnimation');
                     }, 1000);
                 });
-                var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-                
-                if(!isChrome){
-                    //$('#iframeAudio').remove()
-                } else {
-                    //$('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
-                }
+
+                $("#playAudio").on("click", function (e) {
+                 
+                    var audio = document.getElementById("audio");
+                    audio.play();
+                })
+               
+             
             });
             
             
